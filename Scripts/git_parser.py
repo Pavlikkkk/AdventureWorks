@@ -17,7 +17,7 @@ class GitParser:
 
 
     def get_git_objects(self, paths):
-        """Connect to gitHub and retrieves files with metadata"""
+        """ Connect to gitHub and retrieves files with metadata """
         git_objects = {}
         error_msg = []
         for path in paths:
@@ -35,8 +35,5 @@ class GitParser:
         return git_objects, error_msg
 
 if __name__ == '__main__':
-    # get_objects = GitParser(r'https://api.github.com/repos/Pavlikkkk/AdventureWorks/contents/dbo', os.getenv('GITHUB_TOKEN_Adventure_Work'))
-    # print(get_objects.get_git_objects(['tables','func', 'views']))
-    get_objects = GitParser(r'https://api.github.com/repos/Pavlikkkk/AdventureWorks/contents/Chinook',
-                            os.getenv('GITHUB_TOKEN_Adventure_Work'))
-    print(get_objects.get_git_objects(['ddl']))
+    get_objects = GitParser(r'https://api.github.com/repos/Pavlikkkk/AdventureWorks/contents/dbo', os.getenv('GITHUB_TOKEN_Adventure_Work'))
+    print(get_objects.get_git_objects(['tables','func', 'views']))
