@@ -1,0 +1,6 @@
+CREATE TABLE `Genre`
+(
+    `GenreId` INT NOT NULL AUTO_INCREMENT,
+    `Name` NVARCHAR(120),
+    CONSTRAINT `PK_Genre` PRIMARY KEY  (`GenreId`)
+);
