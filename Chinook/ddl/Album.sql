@@ -11,4 +11,4 @@ ALTER TABLE `Album` ADD CONSTRAINT `FK_AlbumArtistId`
 
 CREATE INDEX `IFK_AlbumArtistId` ON `Album` (`ArtistId`);
 
--- description: The table Album contains info about artists and their titles. Other tables reference that table based on ArtistId column
+-- description: The table Album contains info about albums and their titles. The table references the Artist table via ArtistId column.
