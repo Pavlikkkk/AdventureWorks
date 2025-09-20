@@ -20,4 +20,4 @@ ALTER TABLE `Customer` ADD CONSTRAINT `FK_CustomerSupportRepId`
 
 CREATE INDEX `IFK_CustomerSupportRepId` ON `Customer` (`SupportRepId`);
 
--- -- description: The table Customer contains info about customers. 
+-- -- description: The table Customer contains info about customers. Customer table is related to Invoice table via foreign key
